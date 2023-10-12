@@ -1,0 +1,8 @@
+Forward, Backward => y coordinates changing
+Left, Right => x coordinates changing
+Up, down => z coordinates changing
+
+In the code the Forward represent "w"
+In the code the Backward represent "s"
+In the code the Left represent "a"
+In the code the Right represent "d"
