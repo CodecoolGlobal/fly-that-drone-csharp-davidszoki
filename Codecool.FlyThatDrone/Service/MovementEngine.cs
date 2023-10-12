@@ -20,6 +20,12 @@ public class MovementEngine : IMovementEngine
             case "d":
                 drone.Position = new Position(drone.Position.X + 1, drone.Position.Y, drone.Position.Z);
                 return true;
+            case "q":
+                drone.Position = new Position(drone.Position.X, drone.Position.Y, drone.Position.Z + 1);
+                return true;
+            case "e":
+                drone.Position = new Position(drone.Position.X, drone.Position.Y, drone.Position.Z - 1);
+                return true;
            default:
                return false;
         }

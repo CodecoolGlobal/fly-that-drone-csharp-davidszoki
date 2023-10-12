@@ -16,7 +16,7 @@ public class FlyThatDroneUi
     {
         var drone = new Drone(1, new Position(0, 0, 0));
 
-        var movements = new[] { "forward", "backwards", "up", "somewhere" };
+        var movements = new[] { "w", "s", "q", "somewhere" };
         Console.WriteLine($"Initial position for Drone #{drone.Id} {drone.Position}");
 
         foreach (var movement in movements)
@@ -32,8 +32,5 @@ public class FlyThatDroneUi
                 Console.WriteLine($"Position unchanged for Drone #{drone.Id}: {drone.Position}");
             }
         }
-
-
-        Console.ReadLine();
     }
 }
